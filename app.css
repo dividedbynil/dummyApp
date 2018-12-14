@@ -1,0 +1,395 @@
+.container {
+  font-family: sans-serif;
+  /*width: 100%;*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.fontL {
+	font-size: 140%;
+}
+
+.fontS {
+	font-size: 90%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.end-with-space {
+ 	float: right;
+	padding-right: 50px;
+}
+
+.end {
+	float: right;
+}
+
+header i {
+	color: #2bba28;
+}
+
+hr {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.breadcrumb {
+	font-size: 80%;
+}
+
+.breadcrumb li {
+	padding-right: 10px;
+}
+
+.grey {
+	color: LightGrey;
+}
+
+.dark-grey {
+	color: grey;
+}
+
+.green {
+	color: #2bba28;
+}
+
+.on-hover:hover {
+	color:#2bba28;
+}
+
+.banner {
+	background-color: LightGrey;
+  margin-bottom: 90px;
+}
+
+.inline {
+	display: flex;
+	align-items: center;
+	/*justify-content: center;*/
+}
+
+.banner {
+	padding-left: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.inline i {
+	font-size: 250%;
+	width: 15px;
+}
+
+.block li {
+	display: block;
+	margin-right: 30px;
+}
+
+.extend {
+	flex: 1;
+}
+
+#help {
+	background-color: LightGrey;
+	border: 1px;
+	border: 1px solid LightGrey;
+	border-radius: 5px;
+	margin: 30px;
+  margin-bottom: 60px;
+}
+
+#hidden {
+  display: none;
+  background: white;
+
+  border-radius: 0px 0px 5px 5px;
+  padding-bottom: 10px;
+}
+
+.margin-left {
+	margin-left: 100px;
+}
+
+#hidden i {
+	font-size: 600%;
+	padding-left: 20px;
+}
+
+#help-header {
+	padding: 20px;
+}
+
+.pd {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.margin {
+	margin: 20px;
+}
+
+.box {
+	margin: 100px 30px 30px 30px;
+}
+
+.msg {
+	display: none;
+}
+
+input[type=text]:focus + .msg,
+input[type=email]:focus + .msg {
+	display: block;
+}
+
+#left {
+	width: 70%;
+}
+
+#city h4, #city p {
+    display: inline;
+    vertical-align: top;
+    height: 100px;
+}
+
+#city {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+input[type=text] {
+	width: 100%;
+	height:25px;
+	border: 2px solid LightGrey;
+	border-radius: 4px;
+	margin-top: -40px;
+}
+
+input[type=email] {
+	width: 100%;
+	height: 25px;
+	border: 2px solid LightGrey;
+	border-radius: 4px;
+}
+
+input[type=radio] {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #2bba28;
+}
+
+input[type=submit], input[type=reset] {
+	margin-top: 40px;
+}
+
+input:focus {
+	border: 2px solid #2bba28;
+}
+
+input:hover {
+	border: 2px solid #2bba28;
+}
+
+.custom {
+  display: inline;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 1.5px solid LightGrey;
+  margin-top: -2px;
+  border-radius: 5px;
+}
+
+.custom:hover input ~ .checkmark {
+  border: 2px solid #2bba28;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom input:checked ~ .checkmark {
+  border: 2px solid #2bba28;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.custom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom .checkmark:after {
+  left: 5px;
+  top: 1.5px;
+  width: 5px;
+  height: 9px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: black;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid LightGrey;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:hover + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #2bba28;
+    border-radius: 100%;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.radio-label {
+	margin-right: 30px;
+}
+
+#cancel {
+	background-color: LightGrey;
+	color: black;
+	padding: 10px 30px 10px 30px;
+	border: none;
+	font-size: 105%;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+#save {
+	background-color: #2bba28;
+	color: white;
+	padding: 10px 30px 10px 30px;
+	border: none;
+	font-size: 105%;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+
+#bikers {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#bikers td, #bikers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#bikers tr:nth-child(even){background-color: #f2f2f2;}
+
+#bikers tr:hover {
+	background-color: LightGreen;
+}
+#bikers tr:hover i {
+	color: #2bba28;
+}
+
+#bikers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2bba28;
+  color: white;
+}
+
+#bikers i {
+	color: rgba(0, 0, 0, 0);
+}
+
+#close {
+	display: none;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body class="container">
+	<header>
+		<ul>
+			<li><i class="fas fa-bars fontL"></i></li>
+			<li class="fontL bold">&nbspDummy App</li>
+			<li class="end-with-space">
+				<a class="on-hover" href="">
+					<i class="fas fa-user"></i> &nbspJohn
+				</a>
+				| <a class="on-hover" href="">Log Out</a>
+			</li>
+		</ul>
+	</header>
+
+	<hr>
+
+	<div class="breadcrumb">
+		<ul>
+			<li><i class="fa fa-home green"></i></li>
+			<li><i class="fas fa-angle-right grey"></i></li>
+			<li class="green">Page 1</li>
+			<li><i class="fas fa-angle-right grey"></i></li>
+			<li class="on-hover">Breadcrumb</li>
+			<li><i class="fas fa-angle-right grey"></i></li>
+			<li class="on-hover">Current page</li>
+		</ul>
+	</div>
+
+	<div class="banner inline">
+		<div class="inline">
+			<i class="fas fa-puzzle-piece dark-grey"></i>
+			<ul class="block">
+				<li class="dark-grey">Sector</li>
+				<li class="bold">Sport</li>
+			</ul>
+		</div>
+
+		<div class="inline">
+			<i class="fas fa-futbol dark-grey"></i>
+			<ul class="block">
+				<li class="dark-grey">Sport Type</li>
+				<li class="bold">Bycicles</li>
+			</ul>
+		</div>
+
+		<div class="inline extend">
+			<i class="fas fa-bicycle dark-grey"></i>
+			<ul class="block">
+				<li class="dark-grey">Mode</li>
+				<li class="bold">Mountain Cross</li>
+			</ul>
+		</div>
+
+		<div class="inline end-with-space">
+			<i class="fas fa-recycle green"></i>
+			<ul class="block">
+				<li class="dark-grey">Responsibility</li>
+				<li class="bold green">Be Green!</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="help">
+		<div id="help-header">
+			<span class="bold">Help</span>
+			<label id="close" class="end on-hover">close</label>
+			<label id="open" class="end on-hover">open</label>
+		</div>
+
+		<input type="checkbox" id="my_checkbox" style="display:none;">
+		<div id="hidden">
+			<div class="inline">
+				<i class="fa fa-life-ring dark-grey"></i>
+				<div class="margin-left">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
+			</div>
+			<div class="margin">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<form id="registration" class="box">
+		<h1>User registration</h1>
+		<div class="inline">
+			<div class="extend">
+				<div id="left">
+					<h4>Full name</h4>
+					<input type="text" name="fullname" required>
+					<span class="msg fontS dark-grey">instruction to show when focus</span>
+					<h4>E-mail</h4>
+					<input type="email" name="email" required>
+					<span class="msg fontS dark-grey">instruction to show when focus</span>
+					<div id="city">
+					    <h4>City</h4>
+						<span class="fontS dark-grey end">optional</span>
+					</div>
+					<input type="text" name="city">
+					<span class="msg fontS dark-grey">instruction to show when focus</span>
+				</div>
+			</div>
+			<div id="right" class="extend">
+				<h4>Ride in group?</h4>
+			    <input type="radio" value="Always" id="Always" name="group" required>
+			    <label class="radio-label" for="Always">Always</label>
+			    <input type="radio" value="Sometimes" id="sometimes" name="group">
+			    <label class="radio-label" for="sometimes">Sometimes</label>
+			    <input type="radio" value="Never" id="never" name="group">
+			    <label class="radio-label" for="never">Never</label>
+				<br>
+				<br>
+				<h4>Days of the week</h4>
+				<label class="custom">Sun
+					<input type="checkbox" value="Sun" name="days">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="custom">Mon
+					<input type="checkbox" value="Mon" name="days">
+					<span class="checkmark"></span>
+				</label>
+				<label class="custom">Tue
+				  <input type="checkbox" value="Tue" name="days">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="custom">Wed
+					<input type="checkbox" value="Wed" name="days">
+					<span class="checkmark"></span>
+				</label>
+				<label class="custom">Thu
+			    <input type="checkbox" value="Thu" name="days">
+			    <span class="checkmark"></span>
+				</label>
+				<label class="custom">Fri
+					<input type="checkbox" value="Fri" name="days">
+					<span class="checkmark"></span>
+				</label>
+				<label class="custom">Sat
+			    <input type="checkbox" value="Sat" name="days">
+			    <span class="checkmark"></span>
+				</label>
+				<div id="submit">
+					<input id="save" class="end" type="submit" value="Save">
+					<input id="cancel" class="end" type="reset" value="Cancel">
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div class="box">
+		<h1>Bikers</h1>
+		<table id="bikers">
+			<thead>
+		    <tr>
+		  		<th>Full Name</th>
+		  		<th>E-mail</th>
+		  		<th>City</th>
+		  		<th>Ride in group</th>
+		  		<th>Days of the week</th>
+		  		<th>Registration day</th>
+		    </tr>
+		  </thead>
+		  <tbody></tbody>
+		</table>
+
+	</div>
+
+	<hr>
+
+	<ul>
+		<li class="fontS dark-grey">Dummy App</li>
+		<li class="fontS dark-grey end-with-space">Version 1.14</li>
+	</ul>
+
+</body>
+<script src="app.js"></script>
+</html>
